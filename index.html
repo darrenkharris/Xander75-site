@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ============================================================
+       EDIT: Update these meta tags for your domain and social sharing
+       ============================================================ -->
+  <title>Xander75 | DJ · House · Drum &amp; Bass · Garage</title>
+  <meta name="description" content="Xander75 — UK DJ spinning House, Drum &amp; Bass and Garage. 125–138 BPM of non-stop movement. Listen to mixes and get in touch for bookings.">
+  <link rel="canonical" href="https://xander75.co.uk/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://xander75.co.uk/">
+  <meta property="og:title" content="Xander75 — DJ · House · DnB · Garage">
+  <meta property="og:description" content="UK DJ. House, Drum &amp; Bass and Garage. 125–138 BPM. Mixes on Mixcloud.">
+  <!-- EDIT: create a 1200×630px banner image and update path below -->
+  <meta property="og:image" content="https://xander75.co.uk/assets/og-image.png">
+
+  <!-- Twitter/X -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Xander75 — DJ · House · DnB · Garage">
+  <meta name="twitter:description" content="UK DJ. House, Drum &amp; Bass and Garage. 125–138 BPM. Mixes on Mixcloud.">
+
+  <!-- EDIT: replace favicon files with your own -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ══════════════════════════════════════════════════════════
+       NAVIGATION
+  ══════════════════════════════════════════════════════════ -->
+  <nav class="site-nav" aria-label="Main navigation">
+    <div class="container">
+      <div class="nav-inner">
+
+        <!-- EDIT: this is the logo mark — change text or add an SVG logo -->
+        <a href="#hero" class="nav-logo" aria-label="Xander75 home">
+          <span class="logo-accent">X</span>ander<span class="logo-accent">75</span>
+        </a>
+
+        <button class="nav-toggle" id="navToggle"
+                aria-controls="navLinks"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </button>
+
+        <ul class="nav-links" id="navLinks" role="list">
+          <li><a href="#sound">Sound</a></li>
+          <li><a href="#mixes">Mixes</a></li>
+          <li><a href="#gigs">Gigs</a></li>
+          <li><a href="#connect">Connect</a></li>
+          <!-- EDIT: update href to your Mixcloud URL -->
+          <li><a href="https://www.mixcloud.com/YOURUSERNAME" target="_blank" rel="noopener" class="nav-cta">Listen ↗</a></li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+  <main id="main">
+
+  <!-- ══════════════════════════════════════════════════════════
+       HERO
+  ══════════════════════════════════════════════════════════ -->
+  <section class="hero" id="hero" aria-labelledby="hero-title">
+
+    <div class="hero-grid" aria-hidden="true"></div>
+    <div class="hero-glow" aria-hidden="true"></div>
+
+    <!-- THE SIGNATURE ELEMENT: giant "75" watermark -->
+    <div class="hero-watermark" aria-hidden="true">75</div>
+
+    <div class="container">
+      <div class="hero-content">
+
+        <p class="eyebrow">UK DJ — House · DnB · Garage</p>
+
+        <h1 id="hero-title">Xander<span style="color:var(--fuchsia)">75</span></h1>
+
+        <!-- EDIT: update this tagline to reflect your style -->
+        <p class="hero-alias">// Built for the floor. Driven by the groove.</p>
+
+        <p class="hero-bio">
+          All genres of House — from deep and soulful through to peak-time tech and hard — with Drum &amp; Bass and Garage dropped in when the energy demands it. Mixes running 125 to 138 BPM. No filler. No genre snobbery. Just continuous movement.
+        </p>
+
+        <!-- Live BPM readout strip -->
+        <div class="bpm-strip" aria-label="BPM range">
+          <div class="bpm-item">
+            <span class="bpm-value" aria-label="Minimum BPM: 125">125</span>
+            <span class="bpm-label">Min BPM</span>
+          </div>
+          <div class="bpm-divider" aria-hidden="true"></div>
+          <div class="bpm-item">
+            <span class="bpm-value" aria-label="Maximum BPM: 138">138</span>
+            <span class="bpm-label">Max BPM</span>
+          </div>
+          <div class="bpm-divider" aria-hidden="true"></div>
+          <div class="bpm-item">
+            <span class="bpm-value amber" aria-label="3 genres">3</span>
+            <span class="bpm-label">Core Genres</span>
+          </div>
+          <div class="bpm-divider" aria-hidden="true"></div>
+          <div class="bpm-item">
+            <!-- EDIT: update this number as your mix count grows -->
+            <span class="bpm-value" aria-label="Mixes on Mixcloud">∞</span>
+            <span class="bpm-label">Mixes</span>
+          </div>
+        </div>
+
+        <div class="btn-group">
+          <!-- EDIT: update all links below with your real URLs -->
+          <a href="#mixes" class="btn btn-fuchsia">Listen to Mixes</a>
+          <a href="https://www.mixcloud.com/YOURUSERNAME" target="_blank" rel="noopener" class="btn btn-outline">Mixcloud Profile ↗</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════
+       SCROLLING GENRE TICKER
+  ══════════════════════════════════════════════════════════ -->
+  <div class="genre-strip" aria-hidden="true">
+    <div class="genre-ticker">
+      <span class="fuchsia">House Music</span>
+      <span>Deep House</span>
+      <span class="fuchsia">Soulful House</span>
+      <span>Afro House</span>
+      <span class="fuchsia">Tech House</span>
+      <span>Hard House</span>
+      <span class="amber">Drum &amp; Bass</span>
+      <span>Liquid DnB</span>
+      <span class="amber">Garage</span>
+      <span>UK Garage</span>
+      <span class="fuchsia">125 BPM</span>
+      <span>130 BPM</span>
+      <span class="amber">138 BPM</span>
+      <span class="fuchsia">House Music</span>
+      <span>Deep House</span>
+      <span class="fuchsia">Soulful House</span>
+      <span>Afro House</span>
+      <span class="fuchsia">Tech House</span>
+      <span>Hard House</span>
+      <span class="amber">Drum &amp; Bass</span>
+      <span>Liquid DnB</span>
+      <span class="amber">Garage</span>
+      <span>UK Garage</span>
+      <span class="fuchsia">125 BPM</span>
+      <span>130 BPM</span>
+      <span class="amber">138 BPM</span>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════════
+       SOUND / ABOUT
+  ══════════════════════════════════════════════════════════ -->
+  <section class="sound-section" id="sound" aria-labelledby="sound-heading">
+    <div class="container">
+
+      <div class="sound-grid">
+
+        <div class="reveal">
+          <span class="section-eyebrow">The Sound</span>
+          <h2 id="sound-heading">House is home. Everything else is an upgrade in tempo.</h2>
+          <p style="margin-top:1.5rem; margin-bottom:1rem;">
+            <!-- EDIT: update this bio with your own words -->
+            House music is at the core — everything from deep and spiritual through to driving tech house and the harder end of the spectrum. It's not about sticking to one sub-genre; it's about reading the room and picking the right groove for the moment.
+          </p>
+          <p>
+            When the energy calls for it, the BPM climbs and the set shifts into Drum &amp; Bass or UK Garage territory — providing something different without losing the thread. That flexibility is what makes a set interesting: the journey matters as much as any single track.
+          </p>
+          <p>
+            All mixes are recorded and available on Mixcloud. No set ever sounds quite the same twice.
+          </p>
+          <div class="btn-group" style="margin-top:2rem;">
+            <a href="#mixes" class="btn btn-fuchsia">Hear the Mixes</a>
+          </div>
+        </div>
+
+        <div class="genre-cards reveal">
+
+          <!-- ── Genre Card: House ── -->
+          <div class="genre-card">
+            <div class="genre-card-header">
+              <span class="genre-card-title">House Music</span>
+              <span class="genre-bpm">125–132 BPM</span>
+            </div>
+            <!-- EDIT: update descriptions to reflect your actual style and influences -->
+            <p>Deep, soulful, afro, tech, hard — all sub-genres welcome. House is the heartbeat. Whether it's rolling late-night grooves or peak-time bangers, this is where it starts.</p>
+          </div>
+
+          <!-- ── Genre Card: DnB ── -->
+          <div class="genre-card amber-card">
+            <div class="genre-card-header">
+              <span class="genre-card-title">Drum &amp; Bass</span>
+              <span class="genre-bpm amber">170–174 BPM</span>
+            </div>
+            <p>Liquid, neurofunk, rollers. DnB gets deployed when the floor needs a gear change — it's the curveball that resets the energy and opens new doors in a set.</p>
+          </div>
+
+          <!-- ── Genre Card: Garage ── -->
+          <div class="genre-card amber-card">
+            <div class="genre-card-header">
+              <span class="genre-card-title">UK Garage</span>
+              <span class="genre-bpm amber">130–138 BPM</span>
+            </div>
+            <p>Classic and contemporary UK Garage — the shuffle, the swing, the bass pressure. Bridges the gap between House and DnB in a way nothing else quite manages.</p>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════
+       MIXES
+  ══════════════════════════════════════════════════════════ -->
+  <section class="mixes-section" id="mixes" aria-labelledby="mixes-heading">
+    <div class="container">
+
+      <div class="mixes-header reveal">
+        <div>
+          <span class="section-eyebrow">Mixes</span>
+          <h2 id="mixes-heading">What's been playing.</h2>
+        </div>
+        <!-- Animated waveform -->
+        <div class="waveform" aria-hidden="true">
+          <!-- JS sets the heights — these are placeholder bars -->
+          <div class="wave-bar"></div>
+          <div class="wave-bar"></div>
+          <div class="wave-bar"></div>
+          <div class="wave-bar"></div>
+          <div class="wave-bar"></div>
+          <div class="wave-bar"></div>
+          <div class="wave-bar"></div>
+          <div class="wave-bar"></div>
+          <div class="wave-bar"></div>
+          <div class="wave-bar"></div>
+          <div class="wave-bar"></div>
+          <div class="wave-bar"></div>
+          <div class="wave-bar"></div>
+          <div class="wave-bar"></div>
+          <div class="wave-bar"></div>
+          <div class="wave-bar"></div>
+          <div class="wave-bar"></div>
+          <div class="wave-bar"></div>
+          <div class="wave-bar"></div>
+          <div class="wave-bar"></div>
+          <div class="wave-bar"></div>
+          <div class="wave-bar"></div>
+          <div class="wave-bar"></div>
+          <div class="wave-bar"></div>
+        </div>
+      </div>
+
+      <!-- ── Mix Cards ──
+           EDIT: update each card with your real mix titles, durations, dates and Mixcloud links.
+           Add/remove cards as needed. Copy the .mix-card block to add more.
+           Add class "amber-mix" to the outer .mix-card and "amber" to .mix-genre-badge and .mix-link
+           for DnB/Garage mixes.
+      ── -->
+      <div class="mixes-grid">
+
+        <!-- Mix 1 — House -->
+        <article class="mix-card reveal" aria-labelledby="mix1-title">
+          <div class="mix-card-header">
+            <span class="mix-number mono">MX-001</span>
+            <span class="mix-genre-badge">House</span>
+          </div>
+          <div class="mix-card-body">
+            <h3 id="mix1-title">
+              <!-- EDIT: replace with your actual mix title -->
+              Late Night Groove Vol.1
+            </h3>
+            <div class="mix-meta">
+              <!-- EDIT: update duration and date -->
+              <span>1h 02m</span>
+              <span>·</span>
+              <span>June 2025</span>
+              <span>·</span>
+              <span class="active mono">128 BPM</span>
+            </div>
+            <p class="mix-description">
+              <!-- EDIT: your own tracklist flavour notes -->
+              Deep and soulful to start, building through tech house as the hour progresses. A late-night journey mix — the kind that works best with the lights low and the volume up.
+            </p>
+            <!-- EDIT: replace # with your actual Mixcloud track URL -->
+            <a href="https://www.mixcloud.com/YOURUSERNAME/YOURMIX" target="_blank" rel="noopener" class="mix-link">
+              Listen on Mixcloud ↗
+            </a>
+          </div>
+        </article>
+
+        <!-- Mix 2 — Soulful House -->
+        <article class="mix-card reveal" aria-labelledby="mix2-title">
+          <div class="mix-card-header">
+            <span class="mix-number mono">MX-002</span>
+            <span class="mix-genre-badge">Soulful House</span>
+          </div>
+          <div class="mix-card-body">
+            <h3 id="mix2-title">
+              <!-- EDIT -->
+              Sunday Session: Soulful
+            </h3>
+            <div class="mix-meta">
+              <span>58m</span>
+              <span>·</span>
+              <span>May 2025</span>
+              <span>·</span>
+              <span class="active mono">126 BPM</span>
+            </div>
+            <p class="mix-description">
+              Classic soulful house with vocal cuts, gospel-tinged chords and rolling basslines. The kind of mix for a Sunday afternoon when you need something that moves you without rushing anywhere.
+            </p>
+            <a href="https://www.mixcloud.com/YOURUSERNAME/YOURMIX" target="_blank" rel="noopener" class="mix-link">
+              Listen on Mixcloud ↗
+            </a>
+          </div>
+        </article>
+
+        <!-- Mix 3 — Tech House -->
+        <article class="mix-card reveal" aria-labelledby="mix3-title">
+          <div class="mix-card-header">
+            <span class="mix-number mono">MX-003</span>
+            <span class="mix-genre-badge">Tech House</span>
+          </div>
+          <div class="mix-card-body">
+            <h3 id="mix3-title">
+              <!-- EDIT -->
+              Peak Time Protocol
+            </h3>
+            <div class="mix-meta">
+              <span>1h 15m</span>
+              <span>·</span>
+              <span>April 2025</span>
+              <span>·</span>
+              <span class="active mono">132 BPM</span>
+            </div>
+            <p class="mix-description">
+              Driving, functional, relentless. Tech house for peak time — the kind of mix that starts clearing the bar and filling the floor. High pressure from start to finish.
+            </p>
+            <a href="https://www.mixcloud.com/YOURUSERNAME/YOURMIX" target="_blank" rel="noopener" class="mix-link">
+              Listen on Mixcloud ↗
+            </a>
+          </div>
+        </article>
+
+        <!-- Mix 4 — DnB/Garage (amber) -->
+        <article class="mix-card amber-mix reveal" aria-labelledby="mix4-title">
+          <div class="mix-card-header">
+            <span class="mix-number mono">MX-004</span>
+            <span class="mix-genre-badge amber">DnB / Garage</span>
+          </div>
+          <div class="mix-card-body">
+            <h3 id="mix4-title">
+              <!-- EDIT -->
+              Speed Limit: 174
+            </h3>
+            <div class="mix-meta">
+              <span>48m</span>
+              <span>·</span>
+              <span>March 2025</span>
+              <span>·</span>
+              <span class="active mono" style="color:var(--amber)">138→174 BPM</span>
+            </div>
+            <p class="mix-description">
+              Starting in garage territory, climbing through rolling liquid DnB and finishing at full rollers pace. The gear-change mix — when the floor needs a different kind of energy entirely.
+            </p>
+            <a href="https://www.mixcloud.com/YOURUSERNAME/YOURMIX" target="_blank" rel="noopener" class="mix-link amber">
+              Listen on Mixcloud ↗
+            </a>
+          </div>
+        </article>
+
+        <!-- Mix 5 — Afro House -->
+        <article class="mix-card reveal" aria-labelledby="mix5-title">
+          <div class="mix-card-header">
+            <span class="mix-number mono">MX-005</span>
+            <span class="mix-genre-badge">Afro House</span>
+          </div>
+          <div class="mix-card-body">
+            <h3 id="mix5-title">
+              <!-- EDIT -->
+              Roots &amp; Rhythm
+            </h3>
+            <div class="mix-meta">
+              <span>1h 08m</span>
+              <span>·</span>
+              <span>Feb 2025</span>
+              <span>·</span>
+              <span class="active mono">127 BPM</span>
+            </div>
+            <p class="mix-description">
+              Afro house, organic rhythms and percussion-led grooves. This one moves at its own pace — it doesn't rush, it breathes. A different kind of energy from the same floor.
+            </p>
+            <a href="https://www.mixcloud.com/YOURUSERNAME/YOURMIX" target="_blank" rel="noopener" class="mix-link">
+              Listen on Mixcloud ↗
+            </a>
+          </div>
+        </article>
+
+        <!-- Mix 6 — placeholder for future mix -->
+        <article class="mix-card reveal" aria-labelledby="mix6-title" style="opacity:0.6;">
+          <div class="mix-card-header">
+            <span class="mix-number mono">MX-006</span>
+            <!-- EDIT: update badge with genre when added -->
+            <span class="mix-genre-badge">Coming</span>
+          </div>
+          <div class="mix-card-body">
+            <h3 id="mix6-title" style="color:var(--grey);">
+              <!-- EDIT: update when ready -->
+              New Mix — In Progress
+            </h3>
+            <div class="mix-meta">
+              <span style="color:var(--grey-mid);">Summer 2025</span>
+            </div>
+            <p class="mix-description" style="font-style:italic;">
+              <!-- EDIT: tease your next mix -->
+              Something's coming. Watch this space — or follow on Mixcloud to be notified when it drops.
+            </p>
+            <!-- EDIT: replace # with Mixcloud profile URL -->
+            <a href="https://www.mixcloud.com/YOURUSERNAME" target="_blank" rel="noopener" class="mix-link">
+              Follow on Mixcloud ↗
+            </a>
+          </div>
+        </article>
+
+      </div><!-- /mixes-grid -->
+
+      <!-- ── Mixcloud Embed Section ──
+           EDIT: Replace the <iframe> below with the embed code from your Mixcloud profile.
+           To get it: go to your mix on Mixcloud → Share → Embed → copy the iframe code.
+           Delete the .embed-note <div> when you have a real embed to show.
+      ── -->
+      <div class="embed-note reveal">
+        <p>
+          <strong>EDIT:</strong> Paste your Mixcloud embed code here to feature a specific mix directly on the page.<br>
+          Go to your mix on Mixcloud → Share → Embed → copy the iframe code and replace this block.
+        </p>
+      </div>
+
+      <!--
+      EXAMPLE MIXCLOUD EMBED — uncomment and replace with your own:
+      <div class="mixcloud-embed-slot reveal">
+        <iframe
+          width="100%"
+          height="120"
+          src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&autoplay=0&feed=%2FYOURUSERNAME%2FYOURMIXNAME%2F"
+          allow="autoplay">
+        </iframe>
+      </div>
+      -->
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════
+       GIGS
+       EDIT: Replace placeholder rows with your real gig history and upcoming dates.
+       Remove .no-gigs block when you have real data.
+       Add class "upcoming" to .gig-row for highlighted confirmed future gigs.
+  ══════════════════════════════════════════════════════════ -->
+  <section class="gigs-section" id="gigs" aria-labelledby="gigs-heading">
+    <div class="container">
+
+      <div class="gigs-header reveal">
+        <div>
+          <span class="section-eyebrow">Gigs</span>
+          <h2 id="gigs-heading">Dates.</h2>
+        </div>
+        <!-- EDIT: add a booking CTA link here when you have a booking email/form -->
+        <a href="#connect" class="btn btn-fuchsia">Book for an Event</a>
+      </div>
+
+      <!--
+      EDIT: When you have real gig data, delete the .no-gigs block below
+      and uncomment/populate the .gigs-list block.
+
+      Gig row structure:
+      <div class="gig-row upcoming">   <- upcoming = highlighted
+        <div class="gig-date">SAT 14 SEP 2025</div>
+        <div class="gig-info">
+          <h3>Venue or Event Name</h3>
+          <p>City · Doors 22:00</p>
+        </div>
+        <div class="gig-genre">House / Tech</div>
+        <div class="gig-status confirmed">Confirmed</div>
+      </div>
+
+      For past gigs:
+      <div class="gig-row">
+        <div class="gig-date past-date" style="color:var(--grey-mid)">SAT 12 APR 2025</div>
+        <div class="gig-info">...</div>
+        <div class="gig-status past">Past</div>
+      </div>
+      -->
+
+      <div class="no-gigs reveal">
+        <p>
+          <!-- EDIT: remove this placeholder when you have gig dates to show -->
+          No upcoming dates confirmed yet — get in touch to book a set.
+        </p>
+      </div>
+
+      <!--
+      EXAMPLE GIG LIST — uncomment when you have real dates:
+      <div class="gigs-list reveal">
+
+        <div class="gig-row upcoming">
+          <div class="gig-date">SAT 14 SEP 2025</div>
+          <div class="gig-info">
+            <h3>Your Venue Name Here</h3>
+            <p>City · Doors 22:00 · Set 01:00–03:00</p>
+          </div>
+          <div class="gig-genre">House / Tech</div>
+          <div class="gig-status confirmed">Confirmed</div>
+        </div>
+
+        <div class="gig-row">
+          <div class="gig-date" style="color:var(--grey-mid)">SAT 12 APR 2025</div>
+          <div class="gig-info">
+            <h3>Previous Venue</h3>
+            <p>City · Private event</p>
+          </div>
+          <div class="gig-genre">Garage / DnB</div>
+          <div class="gig-status past">Past</div>
+        </div>
+
+      </div>
+      -->
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════
+       CONNECT / BOOKING
+  ══════════════════════════════════════════════════════════ -->
+  <section class="connect-section" id="connect" aria-labelledby="connect-heading">
+    <div class="container">
+
+      <div class="connect-grid">
+
+        <div class="reveal">
+          <span class="section-eyebrow">Connect</span>
+          <h2 id="connect-heading">Follow the music. Book a set.</h2>
+          <p style="margin-top:1.5rem; margin-bottom:2rem;">
+            All mixes live on Mixcloud. Follow there to get notified when new sets drop. For bookings, private events, residencies or just to say hello — reach out through any of the links below.
+          </p>
+
+          <!-- ── Social / Platform Links ──
+               EDIT: replace YOURUSERNAME with your real usernames.
+               Remove any platforms you don't use.
+          ── -->
+          <div class="connect-links">
+
+            <a href="https://www.mixcloud.com/YOURUSERNAME" target="_blank" rel="noopener" class="connect-item">
+              <div class="connect-icon" aria-hidden="true">🎧</div>
+              <div class="connect-text">
+                <span class="connect-platform">Mixcloud</span>
+                <!-- EDIT: update to your actual Mixcloud handle -->
+                <span class="connect-handle">mixcloud.com/Xander75_DJ</span>
+              </div>
+            </a>
+
+            <a href="https://www.instagram.com/YOURUSERNAME" target="_blank" rel="noopener" class="connect-item">
+              <div class="connect-icon" aria-hidden="true">📷</div>
+              <div class="connect-text">
+                <span class="connect-platform">Instagram</span>
+                <!-- EDIT -->
+                <span class="connect-handle">@Xander75_DJ</span>
+              </div>
+            </a>
+
+            <a href="https://soundcloud.com/YOURUSERNAME" target="_blank" rel="noopener" class="connect-item">
+              <div class="connect-icon" aria-hidden="true">☁️</div>
+              <div class="connect-text">
+                <span class="connect-platform">SoundCloud</span>
+                <!-- EDIT -->
+                <span class="connect-handle">soundcloud.com/Xander75DJ</span>
+              </div>
+            </a>
+
+            <!-- EDIT: uncomment and add YouTube if you post video mixes there
+            <a href="https://www.youtube.com/@YOURUSERNAME" target="_blank" rel="noopener" class="connect-item">
+              <div class="connect-icon" aria-hidden="true">▶️</div>
+              <div class="connect-text">
+                <span class="connect-platform">YouTube</span>
+                <span class="connect-handle">@Xander75DJ</span>
+              </div>
+            </a>
+            -->
+
+            <!-- EDIT: replace with your real email address -->
+            <a href="mailto:YOUR@EMAIL.COM" class="connect-item amber">
+              <div class="connect-icon amber-icon" aria-hidden="true">✉️</div>
+              <div class="connect-text">
+                <span class="connect-platform amber">Bookings &amp; Enquiries</span>
+                <!-- EDIT -->
+                <span class="connect-handle">YOUR@EMAIL.COM</span>
+              </div>
+            </a>
+
+          </div>
+        </div>
+
+        <!-- Booking note -->
+        <div class="booking-note reveal">
+          <h3>Available for:</h3>
+          <!-- EDIT: update this list to match the events you want to be booked for -->
+          <p>
+            Club nights, bar residencies, private events, house parties, corporate events and special occasions. Happy to discuss genre and BPM requirements in advance — sets are always tailored to the night and the crowd.
+          </p>
+          <p>
+            Based in the UK. Available nationally. Get in touch with date, venue and any genre preferences and I'll come back to you as quickly as possible.
+          </p>
+          <a href="mailto:YOUR@EMAIL.COM" class="btn btn-amber">Get in Touch</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <!-- ══════════════════════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════════════════════ -->
+  <footer class="site-footer" aria-label="Site footer">
+    <div class="container">
+      <div class="footer-inner">
+
+        <div class="footer-logo">
+          <span>X</span>ander<span>75</span>
+        </div>
+
+        <p class="footer-copy">
+          &copy; <span id="year"></span> Xander75. All rights reserved.
+        </p>
+
+        <ul class="footer-links" role="list">
+          <li><a href="#sound">Sound</a></li>
+          <li><a href="#mixes">Mixes</a></li>
+          <li><a href="#gigs">Gigs</a></li>
+          <li><a href="#connect">Connect</a></li>
+          <!-- EDIT: link to a privacy page if you add one -->
+          <li><a href="privacy.html">Privacy</a></li>
+        </ul>
+
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

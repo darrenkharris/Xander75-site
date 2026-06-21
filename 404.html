@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 | Xander75</title>
+  <meta name="robots" content="noindex">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .error-page {
+      min-height: 100vh;
+      background: var(--black);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .error-watermark {
+      position: absolute;
+      font-family: var(--font-display);
+      font-size: 40vw;
+      font-weight: 700;
+      color: transparent;
+      -webkit-text-stroke: 1px rgba(192,38,211,0.07);
+      pointer-events: none;
+      user-select: none;
+      line-height: 1;
+      letter-spacing: -0.05em;
+    }
+    .error-content {
+      position: relative;
+      z-index: 2;
+    }
+    .error-code {
+      font-family: var(--font-mono);
+      font-size: 5rem;
+      color: var(--fuchsia);
+      line-height: 1;
+      margin-bottom: 1rem;
+    }
+    .error-content h1 {
+      font-size: 1.5rem;
+      margin-bottom: 0.75rem;
+    }
+    .error-content p {
+      color: var(--grey);
+      margin-bottom: 2rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="error-page">
+    <div class="error-watermark" aria-hidden="true">404</div>
+    <div class="error-content">
+      <div class="error-code">404</div>
+      <h1>Lost on the dancefloor.</h1>
+      <p>This page doesn't exist — but the music still does.</p>
+      <div class="btn-group" style="justify-content:center;">
+        <a href="index.html" class="btn btn-fuchsia">Back to the Floor</a>
+        <a href="index.html#mixes" class="btn btn-outline">Listen to Mixes</a>
+      </div>
+    </div>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>
